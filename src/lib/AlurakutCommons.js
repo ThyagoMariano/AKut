@@ -26,6 +26,8 @@ export function AlurakutMenu({ githubUser }) {
         <nav style={{ flex: 1 }}>
           {[
             { name: 'Inicio', slug: '/' },
+            { name: 'Perfil', slug: '/perfil' },
+            { name: 'Pagina de recados', slug: '/pagRecado' },
             { name: 'Amigos', slug: '/amigos' },
             { name: 'Comunidades', slug: '/comunidades' }
           ].map(menuItem => (
@@ -58,7 +60,7 @@ export function AlurakutMenu({ githubUser }) {
 }
 AlurakutMenu.Wrapper = styled.header`
   width: 100%;
-  background-color: #308bc5;
+  background-color: #66018f;
   .alurakutMenuProfileSidebar {
     background: white;
     position: fixed;
@@ -145,10 +147,10 @@ AlurakutMenu.Wrapper = styled.header`
       }
     }
     input {
-      margin-right: 16rem;
+      margin-right: 7rem;
       color: #ffffff;
       background: #4e145f;
-      padding: 10px 100px;
+      padding: 10px 80px;
       border: 0;
       background-image: url(${`${BASE_URL}/icons/search.svg`});
       background-position: 15px center;
